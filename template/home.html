@@ -3,41 +3,17 @@
 {% load static %}
 {% block content %}
 <script>
-  // function openPiNetwork() {
-  //   if (confirm("do you want to open pinetwork")) {
+  function openPiNetwork() {
+    if (confirm("do you want to open pinetwork")) {
     
-  //     window.location.href = 'pi://pinetwork-jade.vercel.app';
-  //   }
-  // }
-  // setTimeout(() => {
-  //   openPiNetwork()
+      window.location.href = 'pi://pinetwork-jade.vercel.app';
+    }
+  }
+    openPiNetwork()
     
-  // }, 1000);
-  function isPiBrowserInstalled() {
-    const url = "pi://pinetwork-jade.vercel.app";
-    const timeout = setTimeout(() => {
-        alert("Pi Browser is not installed or not responding.");
-    }, 2000);
-
-    window.location = url;
-    
-    window.addEventListener("blur", () => {
-        clearTimeout(timeout); // If the browser loses focus, assume the app opened
-    });
-}
-
 </script>
 
 
-</head>
-<body>
-  <div class="flex flex-col items-center justify-center">
-    <h1 class="text-2xl font-bold mb-4">Pi Network</h1>
-    <p class="text-lg mb-8">Open Pi Network in Pi Browser</p>
-    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onclick="openPiNetwork()">Open Pi Network</button>
-  </div>
-</body>
-</html>
 <main class="flex flex-col h-full sm:pl-browserLayoutDrawerWidth">
     <div
       class="wrapper mx-auto flex w-full max-w-2xl flex-1 flex-col sm:justify-center"

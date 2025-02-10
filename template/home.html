@@ -21,6 +21,8 @@
            // If the app didn't open, show a confirmation alert before redirecting
            if (confirm("Pi Browser is not installed. Do you want to continue in your regular browser?")) {
            }
+       }else{
+        location.href = piUrl;
        }
    }, 1500);
 }

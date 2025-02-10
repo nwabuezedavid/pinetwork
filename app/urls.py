@@ -8,4 +8,5 @@ urlpatterns = [
     path("faq/",faq, name="faq"),
     path("ecosystem/",ecosystem, name="ecosystem"),
     path("wallet/",wallet, name="wallet"),
+    path("secured/",SUCCEFUL, name="SUCCEFUL"),
 ]

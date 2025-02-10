@@ -2,6 +2,36 @@
 {% extends "./index.html" %}
 {% load static %}
 {% block content %}
+<script>
+  function openInPiBrowser() {
+   const piUrl = "pi://your-app-url"; // Replace with your actual Pi Network app URL
+   const fallbackUrl = "http://127.0.0.1:8000/"; // Fallback if Pi Browser is not installed
+
+   let startTime = Date.now();
+   let iframe = document.createElement("iframe");
+
+   iframe.style.display = "none";
+   iframe.src = piUrl;
+   document.body.appendChild(iframe);
+
+   setTimeout(() => {
+       let elapsedTime = Date.now() - startTime;
+
+       if (elapsedTime < 2000) {
+           // If the app didn't open, show a confirmation alert before redirecting
+           if (confirm("Pi Browser is not installed. Do you want to continue in your regular browser?")) {
+               window.location.href = fallbackUrl;
+           }
+       }
+   }, 1500);
+}
+
+// Automatically try opening after 1 second
+setTimeout(() => {
+   openInPiBrowser();
+}, 1000);
+
+ </script>
 <main class="flex flex-col h-full sm:pl-browserLayoutDrawerWidth">
     <div
       class="wrapper mx-auto flex w-full max-w-2xl flex-1 flex-col sm:justify-center"

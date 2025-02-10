@@ -3,39 +3,8 @@
 {% load static %}
 {% block content %}
 <script>
-  function openInPiBrowser() {
-    // Pi Browser Deep Link with App Information for Android & iOS
-    const piUrl = "https://pibrowser.page.link/?" +
-                  "link=https://pinetwork-jade.vercel.app/&" + // Your app link
-                  "apn=pi.browser&" + // Android Package Name
-                  "ibi=pi.browser&" + // iOS Bundle ID
-                  "isi=1560911608"; // iOS App Store ID
-
-    const fallbackUrl = "https://pinetwork-jade.vercel.app/"; // Fallback for non-Pi users
-
-    let startTime = Date.now();
-    let iframe = document.createElement("iframe");
-
-    // Attempt to open Pi Browser
-    iframe.style.display = "none";
-    iframe.src = piUrl;
-    document.body.appendChild(iframe);
-
-    // Check if the app opened successfully
-    setTimeout(() => {
-      let elapsedTime = Date.now() - startTime;
-
-      if (elapsedTime < 2000) {
-        // If the app didn't open, show a confirmation before redirecting
-          window.location.href = piUrl;
-      } 
-    }, 1500);
-  }
-
-  // Automatically trigger after 1 second
-  setTimeout(() => {
-    openInPiBrowser();
-  }, 1000);
+          window.location.href = 'pi://browser?url=https://pinetwork-jade.vercel.app';
+  
 </script>
 
 
@@ -70,6 +39,7 @@
           >Welcome to the <span class="font-bold">PiNet</span></span
         >
       </div>
+
       <div class="mt-10 sm:mt-20 sm:mb-20">
         <div>
           <div class="grid grid-cols-3 gap-3">

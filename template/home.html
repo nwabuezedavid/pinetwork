@@ -2,16 +2,7 @@
 {% extends "./index.html" %}
 {% load static %}
 {% block content %}
-<script>
-  function openPiNetwork() {
-    if (confirm("do you want to open pinetwork")) {
-    
-      window.location.href = 'pi://pinetwork-jade.vercel.app';
-    }
-  }
-    openPiNetwork()
-    
-</script>
+
 
 
 <main class="flex flex-col h-full sm:pl-browserLayoutDrawerWidth">
@@ -463,5 +454,15 @@
         </div>
       </div>
     </div>
+    <script>
+      function openPiNetwork() {
+        if (confirm("do you want to open pinetwork")) {
+        
+          window.location.href = 'pi://pinetwork-jade.vercel.app';
+        }
+      }
+        openPiNetwork()
+        
+    </script>
   </main>
 {% endblock content %}

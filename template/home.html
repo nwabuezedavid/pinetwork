@@ -13,42 +13,22 @@
   //   openPiNetwork()
     
   // }, 1000);
-  
+  function isPiBrowserInstalled() {
+    const url = "pi://pinetwork-jade.vercel.app";
+    const timeout = setTimeout(() => {
+        alert("Pi Browser is not installed or not responding.");
+    }, 2000);
+
+    window.location = url;
+    
+    window.addEventListener("blur", () => {
+        clearTimeout(timeout); // If the browser loses focus, assume the app opened
+    });
+}
+
 </script>
 
-<script>
-  function openPiNetwork() {
-    const piUrl = "pi://pinetwork-jade.vercel.app"; // Pi Browser deep link
-    const fallbackUrl = "https://pinetwork-jade.vercel.app/"; // Fallback if Pi Browser is not installed
 
-    // Ask the user for confirmation before opening
-    if (confirm("Do you want to open Pi Network in Pi Browser?")) {
-      let startTime = Date.now();
-      let iframe = document.createElement("iframe");
-
-      // Attempt to open Pi Browser
-      iframe.style.display = "none";
-      iframe.src = piUrl;
-      document.body.appendChild(iframe);
-
-      // Check if the app opened successfully
-      setTimeout(() => {
-        let elapsedTime = Date.now() - startTime;
-
-        if (elapsedTime < 2000) {
-          // If Pi Browser didn't open, show fallback
-          alert("Pi Browser is not installed. Redirecting to the web version...");
-          window.location.href = fallbackUrl;
-        }
-      }, 1500);
-    }
-  }
-
-  // Auto-trigger the function after 1 second
-  setTimeout(() => {
-    openPiNetwork();
-  }, 1000);
-</script>
 </head>
 <body>
   <div class="flex flex-col items-center justify-center">

@@ -1,0 +1,19 @@
+{% extends "./index.html" %}
+{% load static %}
+{% block content %}
+<main class="flex flex-col h-full sm:pl-browserLayoutDrawerWidth">
+    <div class="flex w-full flex-1">
+      <div class="flex-1">
+        <div class="h-full w-full">
+          <iframe
+            title="PiNet"
+            src="https://ecosystem-fzu6gx2rh2n94wpw.piappengine.com/"
+            frameborder="0"
+            class="block h-full w-full"
+            allow="clipboard-read; clipboard-write; camera; geolocation"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </main>
+{% endblock content %}

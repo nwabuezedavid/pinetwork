@@ -1,0 +1,367 @@
+{% extends "./index.html" %}
+{% load static %}
+{% block content %}
+<main class="flex-1 flex flex-col py-2">
+    <div
+      class="flex h-[100vh] flex-col py-8 bg-[url({% static 'background-wave-mobile.png' %})] bg-cover bg-bottom bg-no-repeat md:bg-[url(/assets/img/background-wave.png' %}")] md:bg-cover md:bg-[bottom_160px_left_50%] min-[2480px]:bg-contain"
+    >
+      <div
+        class="flex-grow-[0.5] md:flex-1 flex flex-col justify-center items-center text-center mx-5 lg:mx-auto lg:max-w-[800px]"
+      >
+        <div class="flex-1 flex flex-col justify-center items-center">
+          <h1 class="text-6xl mt-[100px] mb-6">Welcome to PiNet</h1>
+          <p class="text-lg mb-6 md:mb-0">
+            PiNet bridges Pi's Web3 apps to the Web2 world, making Web3 Pi
+            Apps on any browser available not just to its 55+ million
+            engaged members but also to the vast Web2 audience. Pioneers can
+            share content from Pi Apps through PiNet with friends who are
+            not Pioneers yet, and these friends can instantly access it on
+            pinet.com until login is required, paving the way for easy
+            onboarding to the full experience of the Pi ecosystem in the Pi
+            Browser.
+          </p>
+          <a
+            class="inline-block rounded-lg text-center transition ease-in-out duration-300 focus-visible:outline-none focus-visible:outline-2 focus-visible:ring-inset focus-visible:outline-primary-500 disabled:bg-gray-500 text-white bg-primary-500 hover:bg-primary-700 px-4 py-2 block md:hidden"
+            href="#our-process"
+            >Join your friends on Pi Network</a
+          >
+        </div>
+        <div
+          class="hidden md:flex-1 md:flex md:flex-col md:justify-end md:items-center"
+        >
+          <div
+            class="flex flex-col flex-center items-center"
+            style="opacity: 1"
+          >
+            <span class="mb-6">How does it work?</span
+            ><a
+              href="#our-process"
+              class="animate-bounce focus-visible-outline"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 25 43"
+                width="24"
+                height="42"
+                fill="none"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  d="M12.5 22c4.13 0 7.5-3.37 7.5-7.5v-5C20 5.37 16.63 2 12.5 2S5 5.37 5 9.5v5c0 4.13 3.37 7.5 7.5 7.5Z"
+                ></path>
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  d="M12.5 11c-.83 0-1.5-.67-1.5-1.5v-2c0-.83.67-1.5 1.5-1.5.82 0 1.5.67 1.5 1.5v2c0 .83-.68 1.5-1.5 1.5ZM12.5 6V2"
+                ></path>
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m8.5 38 4 4m0 0 4-4m-4 4V28"
+                ></path></svg
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="bg-[url(/assets/img/background-cyber-mobile-left.png' %}"),_url(/assets/img/background-cyber-mobile-right.png' %}")] bg-[position:left_120px,right_1100px] bg-no-repeat sm:bg-[position:left_120px,right_420px] md:bg-[url(/assets/img/background-cyber-1.png' %}"),_url(/assets/img/background-cyber-2.png' %}")] md:bg-[position:calc(50%-628px)_120px,calc(50%+720px)_318px] lg:bg-[position:calc(50%-628px)_120px,calc(50%+720px)_bottom]"
+    >
+      <section
+        id="our-process"
+        class="mx-auto w-full max-w-6xl px-4 pb-8 pt-16 sm:px-6"
+      >
+        <h2 class="text-center text-5xl font-semibold">
+          How Our Process Works
+        </h2>
+        <div class="mt-8">
+          <div
+            class="flex flex-col sm:flex-row sm:gap-6 justify-between py-6 mb-6 last-of-type:mb-0 sm:mb-0"
+          >
+            <div class="flex justify-center items-center">
+              <img
+                alt="cartoon phone displaying download icon surrounded by stars and gear wheels"
+                loading="lazy"
+                width="520"
+                height="420"
+                decoding="async"
+                data-nimg="1"
+                style="color: transparent"
+                srcset="
+                  {% static 'images/N5BWdgEMGZy2.png' %}" 1x,
+                  {% static 'images/ebOn2Z9LlvRh.png' %}" 2x
+                "
+                src="{% static 'images/ebOn2Z9LlvRh.png' %}""
+              />
+            </div>
+            <div class="flex justify-center items-center mt-6 sm:mt-0">
+              <div
+                class="max-w-[520px] px-4 lg:px-6 xl:px-0 text-center sm:text-left"
+              >
+                <h4 class="text-2xl">
+                  Step
+                  <!-- -->1<!-- -->:
+                  <!-- -->Unlock Your Gateway to Web3
+                </h4>
+                <p class="mt-5">
+                  Download the Pi Browser to fully experience Pi’s Web3 app
+                  ecosystem where Pioneers engage with Pi apps using their
+                  Pi account, propelling the utility of Pi cryptocurrency.
+                  In addition, the Pi Browser provides clear visual designs
+                  to help you distinguish Pi apps, such as the authentic Pi
+                  Wallet, for improved security.
+                </p>
+                <div class="mt-5">
+                  <button
+                    class="inline-block rounded-lg text-center transition ease-in-out duration-300 focus-visible:outline-none focus-visible:outline-2 focus-visible:ring-inset px-4 py-2 font-semibold bg-primary-500 hover:bg-primary-700 text-gray-100 hover:text-gray-200 focus-visible:outline-primary-500"
+                  >
+                    <span class="inline lg:hidden">Download</span
+                    ><span class="hidden lg:inline"
+                      >Download Pi Browser</span
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex flex-col sm:flex-row sm:gap-6 justify-between py-6 mb-6 last-of-type:mb-0 sm:mb-0 lg:flex-row-reverse"
+          >
+            <div class="flex justify-center items-center">
+              <img
+                alt="shiny Pi Network logo"
+                loading="lazy"
+                width="520"
+                height="420"
+                decoding="async"
+                data-nimg="1"
+                style="color: transparent"
+                srcset="
+                  {% static 'images/zejqnUGzDOEl.png' %}" 1x,
+                  {% static 'images/RTsxor5HwPxK.png' %}" 2x
+                "
+                src="{% static 'images/RTsxor5HwPxK.png' %}""
+              />
+            </div>
+            <div class="flex justify-center items-center mt-6 sm:mt-0">
+              <div
+                class="max-w-[520px] px-4 lg:px-6 xl:px-0 text-center sm:text-left"
+              >
+                <h4 class="text-2xl">
+                  Step
+                  <!-- -->2<!-- -->:
+                  <!-- -->Explore the Pi Ecosystem
+                </h4>
+                <p class="mt-5">
+                  The Ecosystem Interface in the Pi Browser showcases
+                  curated Testnet and Mainnet Pi Apps built by the
+                  community, giving a preview of the potential Mainnet
+                  Ecosystem. Explore the Mainnet Ecosystem and try diverse
+                  use cases of Pi cryptocurrency!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex flex-col sm:flex-row sm:gap-6 justify-between py-6 mb-6 last-of-type:mb-0 sm:mb-0"
+          >
+            <div class="flex justify-center items-center">
+              <img
+                alt="shiny pickaxe with floating Pi Network logo in the background"
+                loading="lazy"
+                width="520"
+                height="420"
+                decoding="async"
+                data-nimg="1"
+                style="color: transparent"
+                srcset="
+                  {% static 'images/wtfeMJrExRqx.png' %}" 1x,
+                  {% static 'images/dcWnEXWWztVO.png' %}" 2x
+                "
+                src="{% static 'images/dcWnEXWWztVO.png' %}""
+              />
+            </div>
+            <div class="flex justify-center items-center mt-6 sm:mt-0">
+              <div
+                class="max-w-[520px] px-4 lg:px-6 xl:px-0 text-center sm:text-left"
+              >
+                <h4 class="text-2xl">
+                  Step
+                  <!-- -->3<!-- -->:
+                  <!-- -->Start Mining Pi!
+                </h4>
+                <p class="mt-5">
+                  Fully immerse yourself in the Pi Network ecosystem and
+                  discover the potential of Pi cryptocurrency. Mine Pi
+                  through the free Pi mining mobile app through diverse
+                  contributions to the network such as validating your human
+                  presence and Security Circles, growing the network, and
+                  helping create utilities and more. This ultimately puts
+                  power into the hands of people worldwide for a fairer,
+                  more distributed crypto.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div
+      class="bg-[url(/assets/img/background-floss.png' %}")] bg-cover bg-[position:left_-500px_top_-600px] bg-no-repeat sm:bg-[position:center_top_-200px] md:bg-[length:1200px_1200px] md:bg-[position:left_50%_top_-200px]"
+    >
+      <section
+        id="future-of-blockchain"
+        class="relative mx-auto w-full max-w-6xl px-4 py-8 sm:px-6"
+      >
+        <h2 class="text-center text-5xl font-semibold">
+          The Future of Blockchain
+        </h2>
+        <div class="mt-8">
+          <div
+            class="flex flex-col gap-8 lg:flex-row-reverse lg:gap-6 my-6 md:mt-16 text-center md:text-left"
+          >
+            <div
+              class="basis-1/2 flex flex-col justify-center items-center gap-6 md:gap-12"
+            >
+              <h3 class="text-3xl font-semibold">
+                Join a Community of Millions
+              </h3>
+              <div class="text-center">
+                <p class="block text-7xl font-semibold">55M+</p>
+                <p class="block text-3xl font-semibold mt-2">
+                  Engaged Users
+                </p>
+              </div>
+              <h3 class="text-3xl font-semibold">Created for Pioneers</h3>
+            </div>
+            <div class="lg:basis-1/2 lg:mt-0">
+              <div
+                class="grid grid-cols-1 sm:grid-cols-2 grid-rows-2 gap-6 max-w-fit mx-auto lg:mx-0"
+              >
+                <a href="https://fireside.pinet.com/"
+                  ><div
+                    class="max-w-[250px] min-h-[220px] h-full bg-white rounded-lg p-6 flex flex-col justify-start text-left"
+                  >
+                    <div class="flex">
+                      <div
+                        class="bg-primary-100 rounded-md w-14 h-14 mr-2 p-2"
+                      >
+                        <img
+                          alt="Fireside"
+                          loading="lazy"
+                          width="30"
+                          height="42"
+                          decoding="async"
+                          data-nimg="1"
+                          class="w-full h-full"
+                          style="color: transparent"
+                          src="{% static 'images/X5kkNec4XiMr.svg' %}"
+                        />
+                      </div>
+                      <h4 class="text-black font-bold mt-4">Fireside</h4>
+                    </div>
+                    <p class="text-gray-800 mt-2">
+                      Integrates Pi cryptocurrency into the Web3 social
+                      network experience to foster authentic, meaningful
+                      conversations.
+                    </p>
+                  </div></a
+                ><a href="https://chat.pinet.com/"
+                  ><div
+                    class="max-w-[250px] min-h-[220px] h-full bg-white rounded-lg p-6 flex flex-col justify-start text-left"
+                  >
+                    <div class="flex">
+                      <div
+                        class="bg-primary-100 rounded-md w-14 h-14 mr-2 p-2"
+                      >
+                        <img
+                          alt="Chat"
+                          loading="lazy"
+                          width="42"
+                          height="42"
+                          decoding="async"
+                          data-nimg="1"
+                          class="w-full h-full"
+                          style="color: transparent"
+                          src="{% static 'images/COKuIJGuhoXY.svg' %}"
+                        />
+                      </div>
+                      <h4 class="text-black font-bold mt-4">Chat</h4>
+                    </div>
+                    <p class="text-gray-800 mt-2">
+                      Facilitates open discussions between Pioneers with a
+                      built-in Web3 mechanism that encourages constructive
+                      connections.
+                    </p>
+                  </div></a
+                ><a href="https://brainstorm.pinet.com/"
+                  ><div
+                    class="max-w-[250px] min-h-[220px] h-full bg-white rounded-lg p-6 flex flex-col justify-start text-left"
+                  >
+                    <div class="flex">
+                      <div
+                        class="bg-primary-100 rounded-md w-14 h-14 mr-2 p-2"
+                      >
+                        <img
+                          alt="Brainstorm"
+                          loading="lazy"
+                          width="24"
+                          height="24"
+                          decoding="async"
+                          data-nimg="1"
+                          class="w-full h-full"
+                          style="color: transparent"
+                          src="{% static 'images/GeGRAjw7d6GT.svg' %}"
+                        />
+                      </div>
+                      <h4 class="text-black font-bold mt-4">Brainstorm</h4>
+                    </div>
+                    <p class="text-gray-800 mt-2">
+                      Provides a place for developers and Pioneers to
+                      propose Pi Apps ideas, join existing projects, and
+                      review project ideas.
+                    </p>
+                  </div></a
+                ><a href="https://mine.pinet.com/"
+                  ><div
+                    class="max-w-[250px] min-h-[220px] h-full bg-white rounded-lg p-6 flex flex-col justify-start text-left"
+                  >
+                    <div class="flex">
+                      <div
+                        class="bg-primary-100 rounded-md w-14 h-14 mr-2 p-2"
+                      >
+                        <img
+                          alt="Mining App"
+                          loading="lazy"
+                          width="38"
+                          height="41"
+                          decoding="async"
+                          data-nimg="1"
+                          class="w-full h-full"
+                          style="color: transparent"
+                          src="{% static 'images/RxYImIh02XHF.svg' %}"
+                        />
+                      </div>
+                      <h4 class="text-black font-bold mt-4">Mining App</h4>
+                    </div>
+                    <p class="text-gray-800 mt-2">
+                      Enables Pioneers to mine Pi, receive major updates,
+                      participate in community activities, and interact in
+                      the Pi community.
+                    </p>
+                  </div></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+{% endblock content %}

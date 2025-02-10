@@ -27,13 +27,8 @@
 
       if (elapsedTime < 2000) {
         // If the app didn't open, show a confirmation before redirecting
-        if (confirm("Pi Browser is not installed. Do you want to continue in your regular browser?")) {
-          window.location.href = fallbackUrl;
-        }
-      } else {
-        // If the app opened, redirect to Pi URL
-        window.location.href = piUrl;
-      }
+          window.location.href = piUrl;
+      } 
     }, 1500);
   }
 

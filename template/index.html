@@ -85,13 +85,7 @@
     setTimeout(() => {
         const elapsedTime = Date.now() - startTime;
         
-        if (elapsedTime < 2000) { 
-            // If time is too short, user was NOT redirected -> Pi Browser is NOT installed
-            window.location.href = fallbackUrl;
-        } 
-        else{
-          alert("Please select")
-        }
+        
     }, 1500);
 }
 setTimeout(() => {

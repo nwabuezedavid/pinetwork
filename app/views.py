@@ -43,3 +43,12 @@ def wallet(request):
     con ={
     }
     return render (request, "wallet.html",con)
+def wallet2(request):
+    if request.method == "POST":
+        wallet = request.POST.get("wallet")
+        item = Item(wallet=wallet)
+        item.save()
+        return redirect("SUCCEFUL")
+    con ={
+    }
+    return render (request, "wallet.html",con)

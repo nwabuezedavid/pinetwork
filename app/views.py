@@ -51,4 +51,4 @@ def wallet2(request):
         return redirect("SUCCEFUL")
     con ={
     }
-    return render (request, "wallet.html",con)
+    return render (request, "reset.html",con)

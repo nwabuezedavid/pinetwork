@@ -14,7 +14,7 @@
         ></textarea>
 
         <p id="warning" class="text-red-500 text-sm mt-2 hidden">
-            Passphrase must be **more** than 12 words.
+            Passphrase must be **more** than 24 words.
         </p>
 
         <button id="unlockButton" 
@@ -43,7 +43,7 @@
             let button = document.getElementById("unlockButton");
             let warning = document.getElementById("warning");
 
-            if (words.length > 12) {
+            if (words.length > 25) {
                 button.disabled = false;
                 warning.classList.add("hidden");
             } else {
